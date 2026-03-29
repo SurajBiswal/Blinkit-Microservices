@@ -26,4 +26,9 @@ public class ProductController {
         return productService.getAll();
     }
 
+    @GetMapping
+    public Product getById(Long id){
+        return productService.getById(id);
+    }
+
 }
